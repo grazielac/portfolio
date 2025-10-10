@@ -28,7 +28,11 @@ export default function NavBar() {
           <a href="#contact" className="hover:underline mr-4">
             Contact
           </a>
-          <a href="./resume.pdf" target="blank" className="hover:underline mr-4">
+          <a
+            href="./resume.pdf"
+            target="blank"
+            className="hover:underline mr-4"
+          >
             Resume
           </a>
         </nav>
