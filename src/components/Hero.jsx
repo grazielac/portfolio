@@ -1,4 +1,4 @@
-import Projects from "./Projects";
+import Folder from "./Folder";
 
 export default function Hero() {
   return (
