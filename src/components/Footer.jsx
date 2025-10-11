@@ -1,8 +1,8 @@
 export default function Footer() {
   return (
-    <footer className="bg-gray-400 h-[250px] flex flex-col justify-center rounded-tl-3xl rounded-tr-3xl">
+    <footer className="bg-[#4B2914] h-[250px] flex flex-col justify-center rounded-tl-3xl rounded-tr-3xl">
       <div className="max-w-6xl px-4">
-        <div className="flex space-x-4 mt-3">
+        <div className="flex space-x-4 mt-3 text-[#FFFBF0]">
           <a href="#" className="hover:underline mr-4">
             Home
           </a>
@@ -23,7 +23,7 @@ export default function Footer() {
             Resume
           </a>
         </div>
-        <p className="text-sm mt-4">
+        <p className="text-sm mt-4 text-[#FFFBF0]">
           &copy; {new Date().getFullYear()} Graziela. All rights reserved.
         </p>
       </div>
