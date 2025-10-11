@@ -5,7 +5,7 @@ import Footer from "./Footer"
 export default function Hero() {
   return (
     <>
-      <div className="bg-amber-100 min-h-screen flex items-center justify-center px-4">
+      <div className="bg-amber-50 min-h-screen flex items-center justify-center px-4">
         <div className="border bg-amber-200 w-full max-w-5xl h-[80vh] flex items-center justify-center rounded-xl">
           {/* LEFT SIDE */}
           <div className="flex flex-col items-center gap-4">
