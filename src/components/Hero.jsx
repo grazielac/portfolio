@@ -18,8 +18,8 @@ export default function Hero() {
             <div className="bg-amber-400 h-[30vh] w-[50vh]"></div>
           </div>
         </div>
-        {(<Projects />)}
       </div>
+       <Folder />
     </>
   );
 }
