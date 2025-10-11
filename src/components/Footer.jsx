@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="bg-gray-400 py-6 mt-12">
+    <footer className="bg-gray-400 h-[250px] flex flex-col justify-center rounded-tl-3xl rounded-tr-3xl">
       <div className="max-w-6xl px-4">
         <div className="flex space-x-4 mt-3">
           <a href="#" className="hover:underline mr-4">
@@ -23,7 +23,7 @@ export default function Footer() {
             Resume
           </a>
         </div>
-        <p className="text-sm">
+        <p className="text-sm mt-4">
           &copy; {new Date().getFullYear()} Graziela. All rights reserved.
         </p>
       </div>
