@@ -1,4 +1,5 @@
 import Folder from "./Folder";
+import About from "./About";
 
 export default function Hero() {
   return (
@@ -20,6 +21,7 @@ export default function Hero() {
         </div>
       </div>
        <Folder />
+       <About />
     </>
   );
 }
