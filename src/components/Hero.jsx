@@ -1,6 +1,7 @@
 import Folder from "./Folder";
 import About from "./About";
-import Footer from "./Footer"
+import Footer from "./Footer";
+import Contact from "./Contact";
 
 export default function Hero() {
   return (
@@ -21,9 +22,10 @@ export default function Hero() {
           </div>
         </div>
       </div>
-       <Folder />
-       <About />
-       <Footer />
+      <Folder />
+      <About />
+      <Contact />
+      <Footer />
     </>
   );
 }
