@@ -24,7 +24,7 @@ export default function Footer() {
           </a>
         </div>
 
-        <div className="flex gap-8">
+        <div className="flex gap-8 space-x-4 mt-3">
           {/* <!-- Discord --> */}
           <svg
             className="h-6 w-6 text-[#FFFBF0]"
