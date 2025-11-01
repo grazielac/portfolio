@@ -64,7 +64,7 @@ export default function Envelope() {
                   <div className="absolute -top-1 z-20 -left-1 w-4 sm:w-6 h-4 sm:h-6 bg-gray-200 border-t-2 border-gray-300 transform rotate-45"></div>
 
                   <img
-                    src="/public/me.jpeg"
+                    src="/me.jpeg"
                     alt="profile"
                     className="w-32 h-32 sm:w-40 sm:h-40 object-cover rounded-md shadow-xl border-4 border-white transform -rotate-2"
                   />
