@@ -12,7 +12,7 @@ export default function Folder() {
   };
 
   const projects = {
-    Hello: {
+    Soon: {
       title: "Soon",
       screenshot: [],
       description: "Coming Soon",
