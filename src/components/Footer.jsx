@@ -79,7 +79,7 @@ export default function Footer() {
 
       <div className="flex justify-center items-center">
         <p className="text-sm text-center text-[#FFFBF0]">
-          &copy; {new Date().getFullYear()} 2025 Graziela Caringal. All rights reserved.
+          &copy; {new Date().getFullYear()} Graziela Caringal. All rights reserved.
         </p>
       </div>
     </footer>

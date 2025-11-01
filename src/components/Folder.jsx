@@ -29,10 +29,10 @@ export default function Folder() {
       live: "#",
     },
     Blumiora: {
-      title: "Blumiora",
-      screenshot: ["/blumiorahero.png", "/blue.png"],
+      title: "Blumiora (On-going)",
+      screenshot: ["/blumiorahero.png", "/featurecreatives.png"],
       description:
-        "A hyper-local, curated hub for creatives to discover events, showcase their work, and connect with each other — all in one place.",
+        "A hyper-local, curated hub for creatives to discover events, showcase their work, and connect with each other — all in one place. The MVP features event browsing, user profiles, and a responsive interface built with Next.js and TypeScript. Actively developing portfolio showcasing and community messaging features.",
       tech: ["Next.js", "TypeScript", "Tailwind CSS"],
       github: "https://github.com/grazielac/blumiora",
       live: "#",
@@ -44,20 +44,22 @@ export default function Folder() {
 
   return (
     <>
-      <div className="bg-[#FDFCF8] pt-30 flex flex-col justify-center items-center p-10 pb-30">
-        <div className="mb-8 -ml-[700px] ">
-          <h1 className="text-3xl w-90">Featured Projects</h1>
+      <div id="projects" className="bg-[#FDFCF8] min-h-[650px] py-2 sm:py-8 md:py-12 flex flex-col justify-center items-center px-4 sm:px-6 lg:px-10">
+        <div className="mb-8 w-full max-w-6xl sm:-ml-[700px] flex justify-center items-center">
+          <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-center">
+            Featured Projects
+          </h1>
         </div>
 
         {/* FOLDER BASE */}
-        <div className="relative w-4/5 h-[600px] pb-6">
+        <div className="relative w-full max-w-6xl h-[500px] sm:h-[600px] lg:h[650px] pb-6 ">
           {/* TABS */}
-          <div className="absolute -top-12 right-0 flex space-x-4 pl-4">
+          <div className="hidden lg:flex absolute -top-12 right-0 space-x-2 lg:space-x-4">
             {tabs.map((tab, index) => (
               <div
                 key={tab}
                 onClick={() => setActiveTab(tab)}
-                className={`cursor-pointer hover:bg-[#fff1b5] w-40 h-12 bg-gray-200 rounded-tl-2xl rounded-tr-2xl relative -ml-4 transition-all duration-200
+                className={`cursor-pointer hover:bg-[#fff1b5] w-32 lg:w-40 h-10 lg:h-12 bg-gray-200 rounded-tl-2xl rounded-tr-2xl relative transition-all -ml-4 duration-200
               ${
                 activeTab === tab
                   ? "z-30 bg-[#c1dbe8]"
@@ -67,24 +69,49 @@ export default function Folder() {
                 }`}
               >
                 <div className="flex justify-center items-center h-full">
-                  <p className="text-[#43302e] font-medium">{tab}</p>
+                  <p className="text-[#43302e] font-medium text-sm lg:text-base">
+                    {tab}
+                  </p>
                 </div>
               </div>
             ))}
           </div>
 
+          {/* tabs for mobile */}
+
+          <div className="md:hidden mb-4 overflow-x-auto scrollbar-hide">
+            <div className="flex space-x-2 min-w-max pb-2">
+              {tabs.map((tab) => (
+                <button
+                  key={tab}
+                  onClick={() => setActiveTab(tab)}
+                  className={`px-6 py-2 rounded-full font-medium transition-colors whitespace-nowrap
+                    ${
+                      activeTab === tab
+                        ? "bg-[#c1dbe8] text-[#43302e]"
+                        : "bg-gray-200 text-gray-600"
+                    }`}
+                >
+                  {tab}
+                </button>
+              ))}
+            </div>
+          </div>
+
           {/* FOLDER BODY */}
-          <div onScroll={handleScroll} className="w-full h-full bg-gray-200 rounded-b-xl rounded-tl-2xl shadow-lg p-8 overflow-y-scroll">
-            
+          <div
+            onScroll={handleScroll}
+            className="w-full h-160 sm:h-150 md:h-145 ld:h-140 bg-gray-200 rounded-xl rounded-tr-xl md:rounded-b-xl md:rounded-tl-2xl shadow-lg p-4 lg:p-8 overflow-y-scroll"
+          >
             {/* PROJECT CONTENT */}
-            <div className="space-y-6">
+            <div className="space-y-4 sm:space-y-6">
               {/* project title */}
-              <h2 className="text-3xl font-bold text-[#43302e]">
+              <h2 className="text-2xl sm:text-3xl font-bold text-[#43302e]">
                 {currentProject.title}
               </h2>
 
               {/* screenshot */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
                 {currentProject.screenshot &&
                 currentProject.screenshot.length > 0 ? (
                   currentProject.screenshot.map((img, index) => (
@@ -92,7 +119,7 @@ export default function Folder() {
                       key={index}
                       src={img}
                       alt={`${currentProject.title} screenshot ${index + 1}`}
-                      className="w-full h-70 object-cover rounded-lg border-2 border-gray-300"
+                      className="sm:w-full h-55 sm:h-70 sm:object-fit rounded-lg border-2 border-gray-300"
                     />
                   ))
                 ) : (
@@ -148,7 +175,7 @@ export default function Folder() {
           </div>
 
           {showScroll && (
-            <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <div className="absolute sm:bottom-4 left-1/2 transform -translate-x-1/2 animate-bounce">
               <ChevronDown className="text-[#43302e] opacity-50" size={32} />
             </div>
           )}

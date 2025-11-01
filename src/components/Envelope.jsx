@@ -16,15 +16,15 @@ export default function Envelope() {
           <div className="bg-[#FFFBF0] h-[85%] sn:h-[75%] md:h-[63%] w-[90%] sm:w-[85%] md:w-[70%] shadow-2xl rounded-lg relative p-4 sm:p-6 md:p-8 border-2 border-gray-200 transform rotate-1">
             {/* vintage stamp */}
             <div className="absolute top-4 sm:top-6 right-4 sm:right-6 w-16 sm:w-18 p-2 sm:p-4 h-20 sm:h-24 border-2 transition-shadow hover:shadow-lg  italic border-dashed border-[#43302e] bg-[#c1dbe8] flex flex-col items-center justify-center rotate-3 shadow-md">
-              <p className="text-xs sm:text-sm pb-2 sm:pb-2 cursor-pointer hover:text-brown-700 transition-colors font-medium">
+              <a href="#" className="text-xs sm:text-sm pb-2 sm:pb-2 cursor-pointer hover:text-brown-700 transition-colors font-medium">
                 Home
-              </p>
-              <p className="text-xs sm:text-sm pb-2 cursor-pointer hover:text-brown-700 transition-colors font-medium">
+              </a>
+              <a href="#about" className="text-xs sm:text-sm pb-2 cursor-pointer hover:text-brown-700 transition-colors font-medium">
                 About
-              </p>
-              <p className="text-xs sm:text-sm cursor-pointer hover:text-brown-700 transition-colors font-medium">
-                Contact
-              </p>
+              </a>
+              <a href="#projects" className="text-xs sm:text-sm cursor-pointer hover:text-brown-700 transition-colors font-medium">
+                Projects
+              </a>
             </div>
 
             {/* lines */}
@@ -36,11 +36,11 @@ export default function Envelope() {
 
             <div className="flex flex-col md:flex-row md:justify-between mb-6">
               <div className="w-full md:w-2/3 lg:w-3/4 md:pr-4">
-                <h1 className="text-2xl sm:text-3xl md:text-4xl font-serif drop-shadow-md text-[#43302e] mb-2">
+                <h1 className="text-2xl sm:text-3xl md:text-4xl font-serif drop-shadow-md text-[#43302e]">
                   Hi, I'm Graziela
                 </h1>
                 <div className="w-4/5">
-                  <p className="mt-6 sm:mt-6 italic text-[#43302e] text-xs sm:text-sm md:mt-4 md:text-md leading-relaxed">
+                  <p className="mt-4 sm:mt-6 italic text-[#43302e] text-xs sm:text-sm md:mt-4 md:text-md leading-relaxed">
                     A software developer with an eye for design. I build
                     experiences where functionality and beauty work in harmony -
                     because the best interfaces are the ones you don't have to
@@ -60,7 +60,7 @@ export default function Envelope() {
 
             <div className="flex flex-col sm:flex-row items-center mt-6 gap-4 sm:gap-0">
               <div className="w-full sm:w-1/2 flex justify-center">
-                <div className="relative">
+                <div className="relative -mt-3">
                   <div className="absolute -top-1 z-20 -left-1 w-4 sm:w-6 h-4 sm:h-6 bg-gray-200 border-t-2 border-gray-300 transform rotate-45"></div>
 
                   <img
