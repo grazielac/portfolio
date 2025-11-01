@@ -1,30 +1,31 @@
 export default function Footer() {
   return (
-    <footer className="bg-[#43302e] h-[200px] flex flex-col justify-center rounded-tl-3xl rounded-tr-3xl">
-      <div className="max-w-6xl px-4 flex justify-between pl-10 mt-10 mb-10 ml-10">
-        <div className="space-x-4 mt-3 text-[#FFFBF0]">
-          <a href="#" className="hover:underline cursor-pointer mr-4">
+    <footer className="bg-[#43302e] flex flex-col justify-center rounded-tl-3xl rounded-tr-3xl pt-10 pb-6 px-6">
+      <div className="max-w-6xl mx-auto flex-col md:flex-row px-4 flex justify-between items-center md:items-start gap-10 mb-6 text-center md:text-left">
+        <div className="md:space-x-4 space-y-3 md:space-y-0 text-[#FFFBF0]">
+          <a href="#" className="hover:underline cursor-pointer block md:inline">
             Home
           </a>
-          <a href="#about" className="hover:underline cursor-pointer mr-4">
+          <a href="#about" className="hover:underline cursor-pointer block md:inline">
             About
           </a>
-          <a href="#projects" className="hover:underline cursor-pointer mr-4">
+          <a href="#projects" className="hover:underline cursor-pointer block md:inline">
             Projects
           </a>
-          <a href="#contact" className="hover:underline cursor-pointer mr-4">
+          <a href="#contact" className="hover:underline cursor-pointer block md:inline">
             Contact
           </a>
           <a
             href="./resume.pdf"
-            target="blank"
-            className="hover:underline mr-4"
+            target="_blank"
+            className="block md:inline hover:underline"
+            rel="noopener noreferrer"
           >
             Resume
           </a>
         </div>
 
-        <div className="flex gap-8 space-x-4 mt-3">
+        <div className="flex justify-center md:justify-end gap-6 space-x-4 mt-3">
           {/* <!-- Discord --> */}
           <a href="https://discord.com/grazielac" target="_blank" rel="noopener noreferrer">
             <svg
@@ -74,10 +75,10 @@ export default function Footer() {
           </a>
         </div>
       </div>
-      <div className="flex justify-center items-center border-t border-[#FFFBF0] h-100 mx-4 ml-20 mr-20"></div>
+      <div className="border-t border-[#FFFBF0] mx-auto w-full max-w-5xl mb-8 mt-8"></div>
 
-      <div className="flex justify-center items-center py-4">
-        <p className="text-sm text-[#FFFBF0]">
+      <div className="flex justify-center items-center">
+        <p className="text-sm text-center text-[#FFFBF0]">
           &copy; {new Date().getFullYear()} 2025 Graziela Caringal. All rights reserved.
         </p>
       </div>

@@ -1,5 +1,5 @@
 import { useState } from "react";
-// import Github from "lucide-react";
+import { Github, ExternalLink } from "lucide-react";
 
 export default function Folder() {
   const [activeTab, setActiveTab] = useState("Blumiora");
@@ -21,9 +21,9 @@ export default function Folder() {
     },
     Blumiora: {
       title: "Blumiora",
-      description: "A social networking app",
+      description: "A hyper-local, curated hub for creatives to discover events, showcase their work, and connect with each other — all in one place.",
       tech: ["Next.js", "TypeScript", "Tailwind CSS"],
-      github: "#",
+      github: "https://github.com/grazielac/blumiora",
       live: "#",
     },
   };
@@ -33,13 +33,15 @@ export default function Folder() {
 
   return (
     <>
-      <div className="bg-[#FDFCF8] pt-20 flex justify-center items-start p-10 pb-30">
-        {/* FOLDER BASE */}
-        <div className="relative w-4/5 h-[600px]">
-          <h1 className="text-2xl">Featured Projects</h1>
+      <div className="bg-[#FDFCF8] pt-30 flex flex-col justify-center items-center p-10 pb-30">
+        <div className="mb-8 -ml-[700px] ">
+          <h1 className="text-3xl w-90">Featured Projects</h1>
+        </div>
 
+        {/* FOLDER BASE */}
+        <div className="relative w-4/5 h-[600px] pb-6">
           {/* TABS */}
-          <div className="absolute -top-4 right-0 flex space-x-4 pl-4 ">
+          <div className="absolute -top-12 right-0 flex space-x-4 pl-4">
             {tabs.map((tab, index) => (
               <div
                 key={tab}
@@ -92,7 +94,7 @@ export default function Folder() {
                   {currentProject.tech.map((tech) => (
                     <span
                       key={tech}
-                      className="bg-white px-3 rounded-full text-sm border border-gray-300"
+                      className="bg-amber-50 px-3 rounded-full text-sm border border-gray-100"
                     >
                       {tech}
                     </span>
@@ -104,16 +106,18 @@ export default function Folder() {
               <div className="flex gap-4 pt-4">
                 <a
                   href={currentProject.github}
-                  className="flex items-center gap-2 bg-[#43302e] text-white px-6 py-3 rounded-full hover:bg-[#5a4240] transition-colors"
+                  className="flex items-center gap-2 bg-[#43302e] text-white px-6 py-2 rounded-full hover:bg-[#5a4240] transition-colors"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  {/* <Github size={20} /> */}
+                  <Github size={20} />
                   View Code
                 </a>
                 <a
                   href={currentProject.live}
-                  className="flex items-center gap-2 bg-[#43302e] text-white px-6 py-3 rounded-full hover:bg-[#5a4240] transition-colors"
+                  className="flex items-center gap-2 bg-[#43302e] text-white px-6 py-3 rounded-full border-2 border-[#43302e] hover:bg-[#5a4240] transition-colors"
                 >
-                  {/* <Github size={20} /> */}
+                  <ExternalLink size={20} />
                   Live Demo
                 </a>
               </div>
@@ -138,7 +142,6 @@ export default function Folder() {
               </div>
             </div> */}
         </div>
-        <div className="absolute top-12 left-0 w-full h-full bg-gray-200 rounded-b-xl rounded-tl-2xl shadow-lg"></div>
       </div>
     </>
   );

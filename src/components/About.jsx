@@ -1,11 +1,7 @@
 export default function About() {
   return (
     <>
-      <div className="bg-amber-100 min-h-screen flex items-center justify-center">
-        <div className="border bg-amber-200 w-1/2 max-w-5xl h-[80vh] rounded-xl">
-          <p>hello</p>
-        </div>
-      </div>
+      <div className="bg-[#FAF1CA] max-w-4xl mx-auto px-6 rounded-2xl shadow-sm py-10 border"></div>
     </>
   );
 }
