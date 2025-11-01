@@ -13,18 +13,18 @@ export default function Folder() {
 
   const projects = {
     Hello: {
-      title: "Hello",
+      title: "Soon",
       screenshot: [],
-      description: "A social networking app",
-      tech: ["Next.js", "TypeScript", "Tailwind CSS"],
+      description: "Coming Soon",
+      tech: [],
       github: "#",
       live: "#",
     },
     DFM: {
       title: "DFM",
-      screenshot: ["/travel.jpg", "/travel.jpg"],
-      description: "A social networking app",
-      tech: ["Next.js", "TypeScript", "Tailwind CSS"],
+      screenshot: [],
+      description: "Coming Soon",
+      tech: [],
       github: "#",
       live: "#",
     },
@@ -39,7 +39,7 @@ export default function Folder() {
     },
   };
 
-  const tabs = ["Hello", "DFM", "Blumiora"];
+  const tabs = ["Soon", "DFM", "Blumiora"];
   const currentProject = projects[activeTab];
 
   return (
@@ -125,10 +125,10 @@ export default function Folder() {
                 ) : (
                   <>
                     <div className="bg-white rounded-lg h-48 flex items-center justify-center border-2 border-dashed border-gray-300">
-                      <span className="text-gray-400">No screenshot</span>
+                      <span className="text-gray-400">Coming Soon</span>
                     </div>
                     <div className="bg-white rounded-lg h-48 flex items-center justify-center border-2 border-dashed border-gray-300">
-                      <span className="text-gray-400">No screenshot</span>
+                      <span className="text-gray-400">Coming Soon</span>
                     </div>
                   </>
                 )}
