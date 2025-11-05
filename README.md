@@ -2,7 +2,7 @@
 
 A personal portfolio site showcasing my projects, background, and contact info.
 
-![Project Screenshot](../portfolio/public/portfolio.png)
+![Project Screenshot](/public/portfolio.png)
 
 
 ## Live Site
