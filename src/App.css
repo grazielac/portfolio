@@ -1,13 +1,53 @@
 @import "tailwindcss";
 
+
+@font-face {
+  font-family: "Noto Serif Display";
+  src: url("./assets/fonts/NotoSerifDisplay-ExtraCondensed.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Noto Serif Display";
+  src: url("./assets/fonts/NotoSerifDisplay-ExtraCondensed.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Garet";
+  src: url("./assets/fonts/Garet-Book.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Garet";
+  src: url("./assets/fonts/Garet-Heavy.ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: 'Inter', sans-serif;
-  color: #43302e;
+  font-family: "Garet", sans-serif;
+  color: #4C3A2C;
+  background-color: #FFFDF6;
+  
 }
-h1, h2, h3, h4 {
-  font-family: 'Cormorant', serif;
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Noto Serif Display", serif;
+  margin: 0;
+  padding: 0;
 }
+
+
+

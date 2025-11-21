@@ -3,10 +3,35 @@ import React, { useState } from "react";
 function Contact() {
   const [isSubmitted, setIsSubmitted] = useState(false);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    setIsSubmitted(true);
+    const form = e.target;
+
+    const data = {
+      name: form.name.value,
+      email: form.email.value,
+      message: form.message.value,
+    };
+
+    fetch("https://formspree.io/f/mvgdrvok", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data),
+    })
+      .then((response) => {
+        if (response.ok) {
+          setIsSubmitted(true);
+          form.reset();
+        } else {
+          alert("Failed to send message, please try again.");
+        }
+      })
+      .catch((error) => {
+        console.error(error);
+        alert("Something went wrong!");
+      });
   };
+
   return (
     <div>
       <section id="contact" className="sm:py-20 py-70 px-4">
@@ -15,8 +40,7 @@ function Contact() {
 
           {!isSubmitted ? (
             <form
-              action=""
-              method="POST"
+              onSubmit={handleSubmit}
               className="max-w-lg mx-auto flex flex-col gap-4"
             >
               <label>Name</label>
@@ -49,7 +73,7 @@ function Contact() {
             </form>
           ) : (
             <div className="flex flex-col items-center gap-4">
-              <img src="..blue.png" />
+              <img src="..blue.png" alt="success" />
               <p className="text-lg font-medium">Message sent! Thank you</p>
             </div>
           )}
