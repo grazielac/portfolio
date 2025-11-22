@@ -139,6 +139,8 @@ export default function Folder() {
               <h3 className="text-lg font-semibold mb-2">About</h3>
               <p className="leading-relaxed">{currentProject.description}</p>
             </div>
+
+
             {/* tech stack */}
             <div className="mt-8">
               <h3 className="text-lg font-semibold mb-2">Tech Stack</h3>
@@ -153,6 +155,7 @@ export default function Folder() {
                 ))}
               </div>
             </div>
+            
             {/* buttons */}
             <div className="flex gap-4 mt-8">
               <a

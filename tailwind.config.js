@@ -5,6 +5,15 @@ export default {
   theme: {
     extend: {
       keyframes: {
+        typing: {
+          "0%": { width: "0%", visibility: "visible" },
+          "100%": { width: "100%" },
+        },
+        blink: {
+          "50%": { borderColor: "transparent" },
+          "100%": { borderColor: "white" },
+        },
+
         tada: {
           "0%, 100%": { transform: "scale3d(1,1,1)" },
           "10%, 20%": {
@@ -18,8 +27,11 @@ export default {
           },
         },
       },
+
       animation: {
         tada: "tada 1s ease-in-out",
+        "typing-animation":
+          "typing 2s steps(20) forwards, blink .7s step-end infinite",
       },
     },
   },

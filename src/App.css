@@ -29,6 +29,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Permanent Marker";
+  src: url("./assets/fonts/PermanentMarker-Regular.ttf");
+  font-weight: 600;
+  font-style: normal;
+}
+
 html {
   scroll-behavior: smooth;
 }

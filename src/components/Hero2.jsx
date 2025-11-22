@@ -1,10 +1,13 @@
+import NavBar2 from "./NavBar2";
+
 function Hero2() {
   return (
     <div>
       <section id="Home" className="h-screen">
+        <NavBar2 />
         <div className="flex flex-row md:flex-row items-center justify-between w-full max-w-9xl">
           {/* TAG */}
-          <div className="relative flex justify-center items-center">
+          <div className="relative flex justify-center items-center ml-4">
             <div>
               {/* RIBBON */}
               <div className="relative hover:scale-105 hover:-rotate-3 transition-transform -translate-y-15">
@@ -12,8 +15,6 @@ function Hero2() {
 
                 {/* PINK BG */}
                 <div className="bg-[#EBA7B0] absolute w-45 h-76 rounded-xl -translate-y-40 translate-x-18 shadow-lg">
-                 
-
                   {/* TEXTURE OVERLAY */}
                   <div
                     className="inset-0 absolute rounded-xl pointer-events-none"
@@ -56,6 +57,7 @@ function Hero2() {
           {/* TEXT */}
           <div className="translate-x-10 translate-y-8">
             <div className="flex flex-col items-center justify-center">
+              {/* TYPING */}
               <h1 className="-translate-x-58 text-[140px] leading-none italic">
                 hi, I'm
               </h1>
@@ -72,7 +74,7 @@ function Hero2() {
                 problem solver, and always improving the things I touch.
               </p>
 
-              <div className="flex justify-center mt-12">
+              <div className="flex justify-center mt-16">
                 <button
                   className="bg-[#82040B] flex items-center gap-2 px-5 py-2 rounded-full text-white cursor-pointer hover:bg-[#FDDAD8] hover:text-[#4C3A2C]"
                   href="#Projects"
