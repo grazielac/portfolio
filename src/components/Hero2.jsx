@@ -7,14 +7,14 @@ function Hero2() {
         <NavBar2 />
         <div className="flex flex-row md:flex-row items-center justify-between w-full max-w-9xl">
           {/* TAG */}
-          <div className="relative flex justify-center items-center ml-4">
+          <div className="hidden relative xl:flex justify-center items-center ml-4">
             <div>
-              {/* RIBBON */}
-              <div className="relative hover:scale-105 hover:-rotate-3 transition-transform -translate-y-15">
-                <div className="bg-[#730C04] w-4 h-85 ml-38 -translate-y-40"></div>
+              {/* RIBBON + TAG */}
+              <div className=" relative hover:scale-105 hover:-rotate-3 transition-transform -translate-y-15">
+                <div className="bg-[#730C04] w-2 xl:w-4 h-85 ml-38 -translate-y-40"></div>
 
                 {/* PINK BG */}
-                <div className="bg-[#EBA7B0] absolute w-45 h-76 rounded-xl -translate-y-40 translate-x-18 shadow-lg">
+                <div className="bg-[#EBA7B0] absolute w-45 h-70 rounded-xl -translate-y-40 translate-x-18 shadow-lg">
                   {/* TEXTURE OVERLAY */}
                   <div
                     className="inset-0 absolute rounded-xl pointer-events-none"
@@ -46,7 +46,7 @@ function Hero2() {
 
                   {/* Small top decorations */}
                   <div className="absolute top-0 left-0">
-                    <div className="bg-[#730C04] w-4 h-6 rounded-xs ml-20 absolute z-10 -translate-y-2"></div>
+                    <div className="bg-[#730C04] w-2 xl:w-4 h-6 rounded-xs ml-20 absolute z-10 -translate-y-2"></div>
                     <div className="bg-amber-50 w-8 h-3 translate-x-18 translate-y-2 rounded-xs"></div>
                   </div>
                 </div>
@@ -55,24 +55,25 @@ function Hero2() {
           </div>
 
           {/* TEXT */}
-          <div className="translate-x-10 translate-y-8">
+          <div className="translate-x-[8px] translate-y-[30px] xl:translate-x-[10px] xl:translate-y-8 mt-4">
             <div className="flex flex-col items-center justify-center">
               {/* TYPING */}
-              <h1 className="-translate-x-58 text-[140px] leading-none italic">
+              <h1 className="text-[80px] -translate-x-[35px] xl:-translate-x-[230px] xl:text-[140px] leading-none italic">
                 hi, I'm
               </h1>
-              <h1 className="text-[156px] tracking-tighter leading-none ">
+              <h1 className="text-[96px] sm:translate-x-[20px] xl:translate-x-2 xl:text-[156px] tracking-tighter leading-none ">
                 GRAZIELA
               </h1>
-
-              <p className="font-body text-base whitespace-pre-line text-center mt-6">
-                A <span className="font-semibold">junior developer</span> who
-                thinks like a designer and builds <br />
-                like a maker. I learn by doing, refine as I go, and turn ideas{" "}
-                <br />
-                into functional, user-focused products. Ceramic artist, <br />
-                problem solver, and always improving the things I touch.
-              </p>
+              <div className="ml-6 mr-8 flex justify-center items-center ">
+                <p className="text-sm xl:text-base xl:whitespace-pre-line text-center mt-6">
+                  A <span className="font-semibold">junior developer</span> who
+                  thinks like a designer and builds <br className="hidden lg:block" />
+                  like a maker. I learn by doing, refine as I go, and turn ideas 
+                  <br className="hidden lg:block" />
+                  into functional, user-focused products. Ceramic artist, <br className="hidden lg:block" />
+                  problem solver, and always improving the things I touch.
+                </p>
+              </div>
 
               <div className="flex justify-center mt-16">
                 <button
@@ -98,7 +99,7 @@ function Hero2() {
                 <img
                   src="/anotation2.png"
                   alt="GRAZIELA"
-                  className="-translate-y-26  -translate-x-60 absolute -rotate-6 w-24 md:w-32 hover:scale-105 hover:-rotate-3 transition-transform"
+                  className="hidden md:block -translate-y-26 -translate-x-60 absolute -rotate-6 w-24 md:w-32 hover:scale-105 hover:-rotate-3 transition-transform"
                 />
               </div>
 
@@ -107,22 +108,23 @@ function Hero2() {
                 <img
                   src="/arrow.png"
                   alt="GRAZIELA"
-                  className="-translate-y-10  -translate-x-38 absolute -rotate-6 w-24 md:w-32"
+                  className="hidden md:block -translate-y-10  -translate-x-38 absolute -rotate-6 w-24 md:w-32"
                 />
               </div>
-              <div className="-translate-y-24 flex justify-center relative hover:scale-105 hover:-rotate-3 transition-transform">
+
+              <div className="hidden md:block max-w-2xl  -translate-y-44 xl:-translate-y-24 xl:flex justify-center relative hover:scale-105 hover:-rotate-3 transition-transform">
                 {/* PHOTO */}
                 <img
                   src="/blue.png"
                   alt="GRAZIELA"
-                  className="w-30 md:w-40 lg:w-65 lg:h-86 rounded-3xl object-cover border rotate-6 shadow-lg"
+                  className="w-162 h-46 lg:w-65 lg:h-86 rounded-xl object-cover border rotate-6 shadow-lg"
                 />
 
                 {/* TAPE */}
                 <img
                   src="/tape.png"
                   alt="tape"
-                  className="absolute top-0 -translate-y-11 translate-x-6 rotate-6 w-24 md:w-32"
+                  className="absolute top-0 w-18 -translate-y-6 translate-x-2 xl:-translate-y-11 xl:translate-x-6 rotate-6 xl:w-32"
                 />
               </div>
             </div>

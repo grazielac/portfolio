@@ -12,8 +12,8 @@ function NavBar2() {
 
   return (
     <>
-      <div className="flex justify-center mt-5 mb-5">
-        <div className="relative bg-gray-100 rounded-full py-4 flex w-[600px] justify-between items-center">
+      <div className="ml-8 mr-8 xl:ml-4 xl:mr-4 mb-5 xl:flex justify-center mt-8 xl:mt-5">
+        <div className="relative bg-gray-100 rounded-full py-4 flex xl:w-[600px] justify-between items-center">
           {/* SLIDING PILL */}
           <div
             className="absolute py-7 px-2 pl-12 pr-12 rounded-full bg-[#FDDAD8] transition-all duration-300 flex justify-center items-center"
