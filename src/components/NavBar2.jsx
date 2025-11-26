@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 function NavBar2() {
-  const tabs = ["Home", "Projects", "About", "Contact"];
+  const tabs = ["Home", "Projects", "About"];
   const [active, setActive] = useState("Home");
 
   const handleClick = (tab) => {

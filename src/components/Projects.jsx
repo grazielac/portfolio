@@ -3,21 +3,21 @@ import { projects } from "../data";
 function Projects() {
   return (
     <>
-      <section id="Projects" className="h-screen mt-10">
+      <section id="Projects" className="min-h-screen mt-12">
         <div>
           <div className="flex justify-center items-center">
             <h1 className="text-2xl md:text-4xl">Projects</h1>
           </div>
 
-          <div className="flex mt-10 ml-8 mr-8 xl:ml-24 xl:mr-24">
+          <div className="mt-10 px-6 xl:px-24">
             {/* PLACEHOLDER IMAGE */}
-            <div className="flex gap-12 flex-col md:flex-cols-2 lg:flex-row">
+            <div className="grid gap-12 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 place-items-center">
               {projects.map((project) => (
-                <div>
+                <div className="w-full max-w-sm">
                   {/* PLACEHOLDER PHOTO */}
                   <div className="relative w-full max-w-sm shadow-lg md:hover:scale-105 transition-transform duration-300 cursor-pointer">
                     {/* gray cover */}
-                    <div className="bg-[#E7E5DC] w-full h-16 xl:h-20 top-68 xl:top-70 absolute"></div>
+                    <div className="bg-[#E7E5DC] w-full h-16 xl:h-20 absolute top-68 xl:top-70 "></div>
                     {/* note */}
                     <p
                       className="
@@ -31,7 +31,7 @@ function Projects() {
                     <img
                       src="/polaroid.jpg"
                       alt="polaroid"
-                      className="rounded-xs flex justify-center w-full h-auto object-cover"
+                      className="w-full h-auto object-cover"
                     />
                     {/* top */}
                     <img
@@ -52,7 +52,10 @@ function Projects() {
                     <h1 className="text-2xl">{project.title}</h1>
 
                     {/* TECH STACK */}
-                    <div className="flex flex-wrap gap-2 pl-2">
+                    <div
+                      className="flex flex-wrap gap-2 
+                    "
+                    >
                       {project.tech.map((tech) => (
                         <div
                           key={tech}
@@ -63,16 +66,14 @@ function Projects() {
                       ))}
                     </div>
 
-                    <div className="flex flex-wrap gap-2 mt-2 mb-2">
-                      <div className="mt-2">{project.description}</div>
-                      <div className="mt-2">
-                        <p
-                          style={{ fontFamily: "Inter" }}
-                          className="font-medium"
-                        >
-                          {project.type} • {project.date}
-                        </p>
-                      </div>
+                    <div className="mt-2">{project.description}</div>
+                    <div className="mt-2">
+                      <p
+                        style={{ fontFamily: "Inter" }}
+                        className="font-medium"
+                      >
+                        {project.type} • {project.date}
+                      </p>
                     </div>
                   </div>
                 </div>

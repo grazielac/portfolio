@@ -115,7 +115,7 @@ function Hero2() {
               <div className="hidden md:block max-w-2xl  -translate-y-44 xl:-translate-y-24 xl:flex justify-center relative hover:scale-105 hover:-rotate-3 transition-transform">
                 {/* PHOTO */}
                 <img
-                  src="/blue.png"
+                  src="/me3.png"
                   alt="GRAZIELA"
                   className="w-162 h-46 lg:w-65 lg:h-86 rounded-xl object-cover border rotate-6 shadow-lg"
                 />
