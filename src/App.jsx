@@ -1,13 +1,15 @@
-import Hero from "./components/Hero"
+import Hero2 from "./components/Hero";
+import Projects from "./components/Projects";
+import About2 from "./components/About";
 import "./App.css";
-import NavBar from "./components/NavBar";
-import Footer from "./components/Footer";
-import Envelope from "./components/Envelope";
+
 
 function App() {
   return (
     <div>
-      <Hero />
+      <Hero2 />
+      <Projects />
+      <About2 />
     </div>
   );
 }
